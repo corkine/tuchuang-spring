@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: test
+  mvc:
+    throw-exception-if-no-handler-found: true
+    static-path-pattern: /static/**
+server:
+  servlet:
+    session:
+      cookie:
+        name: CM_ID
+logging:
+  level:
+    root: info
+    sql: debug
+    web: info
+    cm: debug
+  path: logFiles
+  file:
+    max-size: 10MB
+  group:
+    cm: com.mazhangjing.cloud.tuchuang
+oss:
+  accessKeyId: xxxxxx
+  accessKeySecret: xxxxxxxxxxxx
+  bucketName: cmxxxx
+  endpoint: oss-cn-shenzhen.aliyuncs.com
+  fileHost: http://xxxxxxxxxxxxxx.com
+
+---
+spring:
+  profiles: test
+  thymeleaf:
+    cache: false
+
+server:
+  port: 8080
+---
+spring:
+  profiles: real
+
+server:
+  port: 80
