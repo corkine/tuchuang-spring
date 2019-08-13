@@ -29,14 +29,14 @@ public class TuchuangApplicationTests {
 
 	@Test public void testUploadAndDownload() throws InterruptedException {
 		assert (utils.upload(new File(UUID.randomUUID().toString())) == null);
-		String result = utils.upload(new File("/Users/corkine/Downloads/tuchuang/src/test/akka_vote.png"));
+		String result = utils.upload(new File("src/test/akka_vote.png"));
 		System.out.println("Result is " + result);
 		assert (result != null);
 		String fileName = result.replace(config.getFileHost() + "/","");
 		System.out.println("fileName = " + fileName);
 		TimeUnit.SECONDS.sleep(3);
 		boolean downloadRes = utils.downloadFile(fileName,
-				"/Users/corkine/Downloads/tuchuang/src/test/" + UUID.randomUUID().toString() + ".png");
+				"src/test/" + UUID.randomUUID().toString() + ".png");
 		assert downloadRes;
 		TimeUnit.SECONDS.sleep(3);
 		assert (!utils.downloadFile(UUID.randomUUID().toString(), "MayNotExist"));

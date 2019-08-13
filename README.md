@@ -1,5 +1,9 @@
 # 小 🐴 图床 - 后端部分
 
+## 版本
+
+当前版本 v2，主要新增功能：BingImage 接口
+
 ## 概要
 
 这是我写的一个很简单的图床站，从前端上传的图片被从服务器中转到阿里云 OSS 进行保存，返回一个网址，用于文章博客使用。
@@ -290,3 +294,4 @@ class OSSUtils {
 > 这个仓库已经包含了前端打包后的部分，如果需要前端实现代码（Vue实现），参考 https://github.com/corkine/cmBed_Vue 这个仓库即可。
 
 > 部署指南：和众多 Spring Boot 程序一样，直接 java -jar xxx.jar 运行，你可以修改 resources/application.yml 的 OSS 属性，放在外面覆盖内部配置。
+
