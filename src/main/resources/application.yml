@@ -21,16 +21,16 @@ logging:
   group:
     cm: com.mazhangjing.cloud.tuchuang
 oss:
-  accessKeyId: LTAIuSIeW67COQ6j
-  accessKeySecret: ZAcPfq1V7iE3VZuy2CO9s8yj52nc0d
-  bucketName: cmbed
-  endpoint: oss-cn-shenzhen.aliyuncs.com
-  fileHost: http://static2.mazhangjing.com
+  accessKeyId: LTAIuSIeW67C---
+  accessKeySecret: ZAcPfq1V7iE3----
+  bucketName: cmb--d
+  endpoint: oss-cn-shenzhen.---com
+  fileHost: http://static2.mazhan------
 
 baidu:
-  appId: 16844275
-  apiKey: XPjN10umuOlZ8r2W1dgjwf14
-  secureKey: Rbcs0bVYmDL2AxfFTx9tN4OoGxhFaCfi
+  appId: 16844---
+  apiKey: XPjN10umuOl-----
+  secureKey: Rbcs0bVYmDL2Ax-------
 
 ---
 spring:
